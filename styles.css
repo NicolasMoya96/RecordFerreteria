@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ecf0f1; /* Fondo gris claro */
 }
 
 header {
-    background-color: #333;
+    background-color: #2c3e50; /* Azul oscuro */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -33,6 +33,12 @@ nav ul li a {
     text-decoration: none;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .promo {
     text-align: center;
     padding: 20px;
@@ -46,7 +52,7 @@ nav ul li a {
 .about, .servicios, .ofertas {
     padding: 20px;
     background-color: #fff;
-    margin: 20px;
+    margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -55,7 +61,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .producto {
@@ -65,6 +71,10 @@ nav ul li a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .producto:hover {
@@ -93,21 +103,21 @@ nav ul li a {
 }
 
 .producto button {
-    background-color: #333;
+    background-color: #e67e22; /* Naranja */
     color: #fff;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: auto;
 }
 
 .producto button:hover {
-    background-color: #555;
+    background-color: #d35400; /* Naranja más oscuro */
 }
 
 #carrito {
-    padding: 20px;
+    padding: 20px 0;
 }
 
 #carrito div {
@@ -116,6 +126,9 @@ nav ul li a {
     margin-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #carrito img {
@@ -143,7 +156,7 @@ nav ul li a {
 }
 
 footer {
-    background-color: #333;
+    background-color: #2c3e50; /* Azul oscuro */
     color: #fff;
     text-align: center;
     padding: 10px 0;
