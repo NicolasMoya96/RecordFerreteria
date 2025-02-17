@@ -1,9 +1,13 @@
-/* Estilos generales */
+/* 
+  Fuente Roboto se incluye desde el <head> en los HTML. 
+  Se puede usar "font-family: 'Roboto', sans-serif;" en todo el body.
+*/
+
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ecf0f1; /* Fondo gris claro */
+    font-family: 'Roboto', sans-serif; 
+    background-color: #f5f5f5; /* Fondo gris claro */
   }
   
   /* Encabezado */
@@ -16,6 +20,7 @@ html, body {
   
   header h1 {
     margin: 0;
+    font-weight: 700;
   }
   
   nav ul {
@@ -33,6 +38,7 @@ html, body {
   nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: 400;
   }
   
   /* Contenedor principal */
@@ -49,8 +55,15 @@ html, body {
   }
   
   .promo img {
-    max-width: 100%;
+    width: 60%; /* Ajuste de la imagen al 60% */
+    display: block;
+    margin: 0 auto; /* Centrado horizontal */
     height: auto;
+  }
+  
+  .promo h2 {
+    margin: 10px 0;
+    font-weight: 700;
   }
   
   .about,
@@ -61,6 +74,13 @@ html, body {
     margin: 10px 0;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .about h2,
+  .servicios h2,
+  .ofertas h2 {
+    font-weight: 700;
+    margin-top: 0;
   }
   
   /* Productos */
@@ -98,33 +118,36 @@ html, body {
   .producto h3 {
     margin: 10px 0;
     font-size: 1.1em;
+    font-weight: 700;
   }
   
   .producto p {
     margin: 5px 0;
     color: #555;
     font-size: 0.9em;
+    font-weight: 400;
   }
   
   .producto .precio {
-    font-weight: bold;
+    font-weight: 700;
     color: #333;
     font-size: 1em;
     margin-bottom: 10px;
   }
   
   .producto button {
-    background-color: #e67e22;
+    background-color: #e67e22; /* Naranja */
     color: #fff;
     border: none;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 0.9em;
+    font-weight: 700;
   }
   
   .producto button:hover {
-    background-color: #d35400;
+    background-color: #d35400; /* Naranja más oscuro */
   }
   
   /* Carrito lateral */
@@ -139,12 +162,14 @@ html, body {
     padding: 20px;
     transition: right 0.3s ease;
     overflow-y: auto;
-    z-index: 500; /* Para que quede debajo del botón */
+    z-index: 500; 
   }
   
   #carrito-lateral h2 {
     margin-top: 0;
     text-align: center;
+    font-weight: 700;
+    color: #2c3e50;
   }
   
   #carrito-lateral.active {
@@ -168,9 +193,10 @@ html, body {
   }
   
   .total-label {
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     margin-top: 15px;
+    color: #2c3e50;
   }
   
   .btn-vaciar {
@@ -182,25 +208,27 @@ html, body {
     cursor: pointer;
     margin-top: 15px;
     width: 100%;
+    font-weight: 700;
   }
   
   .btn-vaciar:hover {
     background-color: #ff1a1a;
   }
   
-  /* Botón del carrito (posicionado más abajo para no tapar el título) */
+  /* Botón del carrito en parte inferior izquierda */
   #boton-carrito {
     position: fixed;
-    top: 100px; /* Ajusta esta posición según necesites */
-    right: 20px;
+    bottom: 20px;
+    left: 20px;
     background-color: #e67e22;
     color: #fff;
     border: none;
     padding: 15px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1.1em;
     z-index: 1000;
+    font-weight: 700;
   }
   
   #boton-carrito:hover {
