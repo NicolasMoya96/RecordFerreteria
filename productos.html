@@ -1,74 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - Record Ferretería</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos - Record Ferretería</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Record Ferretería</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="carrito.html">Carrito</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="container">
-            <h2>Nuestros Productos</h2>
-            <div class="productos">
-                <div class="producto">
-                    <img src="images/taladro.jpg" alt="Taladro">
-                    <h3>Taladro Inalámbrico</h3>
-                    <p>Potente taladro inalámbrico con batería de larga duración. Ideal para trabajos en el hogar y profesionales.</p>
-                    <p class="precio">$150.000 COP</p>
-                    <button onclick="agregarAlCarrito('Taladro', 150000)">Agregar al Carrito</button>
-                </div>
-                <div class="producto">
-                    <img src="images/martillo.jpg" alt="Martillo">
-                    <h3>Martillo de Carpintero</h3>
-                    <p>Martillo robusto con mango de fibra de vidrio. Perfecto para trabajos de construcción y carpintería.</p>
-                    <p class="precio">$30.000 COP</p>
-                    <button onclick="agregarAlCarrito('Martillo', 30000)">Agregar al Carrito</button>
-                </div>
-                <div class="producto">
-                    <img src="images/destornillador.jpg" alt="Destornillador">
-                    <h3>Juego de Destornilladores</h3>
-                    <p>Set de 6 destornilladores de precisión con puntas intercambiables. Incluye estuche para almacenamiento.</p>
-                    <p class="precio">$45.000 COP</p>
-                    <button onclick="agregarAlCarrito('Destornillador', 45000)">Agregar al Carrito</button>
-                </div>
-                <div class="producto">
-                    <img src="images/llave-inglesa.jpg" alt="Llave Inglesa">
-                    <h3>Llave Inglesa Ajustable</h3>
-                    <p>Llave ajustable de alta resistencia. Ideal para trabajos de fontanería y mecánica.</p>
-                    <p class="precio">$25.000 COP</p>
-                    <button onclick="agregarAlCarrito('Llave Inglesa', 25000)">Agregar al Carrito</button>
-                </div>
-                <div class="producto">
-                    <img src="images/pulidora.jpg" alt="Pulidora">
-                    <h3>Pulidora Eléctrica</h3>
-                    <p>Pulidora de alta potencia con velocidad ajustable. Perfecta para trabajos de acabado.</p>
-                    <p class="precio">$200.000 COP</p>
-                    <button onclick="agregarAlCarrito('Pulidora', 200000)">Agregar al Carrito</button>
-                </div>
-                <div class="producto">
-                    <img src="images/pinzas-punta.jpg" alt="Pinzas de Punta">
-                    <h3>Pinzas de Punta</h3>
-                    <p>Pinzas de precisión para trabajos electrónicos y de bricolaje.</p>
-                    <p class="precio">$20.000 COP</p>
-                    <button onclick="agregarAlCarrito('Pinzas de Punta', 20000)">Agregar al Carrito</button>
-                </div>
-            </div>
+  <header>
+    <h1>Record Ferretería</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <h2>Nuestros Productos</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="images/taladro.jpg" alt="Taladro" />
+          <h3>Taladro Inalámbrico</h3>
+          <p>
+            Potente taladro inalámbrico con batería de larga duración. Ideal para trabajos en el hogar y profesionales.
+          </p>
+          <p class="precio">$150.000 COP</p>
+          <button onclick="agregarAlCarrito('Taladro Inalámbrico', 150000)">Agregar al Carrito</button>
         </div>
-    </main>
-    <footer>
-        <p>&copy; 2023 Record Ferretería. Todos los derechos reservados.</p>
-    </footer>
-    <script src="script.js"></script>
+        <div class="producto">
+          <img src="images/martillo.jpg" alt="Martillo" />
+          <h3>Martillo de Carpintero</h3>
+          <p>
+            Martillo robusto con mango de fibra de vidrio. Perfecto para trabajos de construcción y carpintería.
+          </p>
+          <p class="precio">$30.000 COP</p>
+          <button onclick="agregarAlCarrito('Martillo de Carpintero', 30000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+          <img src="images/destornillador.jpg" alt="Destornillador" />
+          <h3>Juego de Destornilladores</h3>
+          <p>
+            Set de 6 destornilladores de precisión con puntas intercambiables. Incluye estuche para almacenamiento.
+          </p>
+          <p class="precio">$45.000 COP</p>
+          <button onclick="agregarAlCarrito('Juego de Destornilladores', 45000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+          <img src="images/llave-inglesa.jpg" alt="Llave Inglesa" />
+          <h3>Llave Inglesa Ajustable</h3>
+          <p>
+            Llave ajustable de alta resistencia. Ideal para trabajos de fontanería y mecánica.
+          </p>
+          <p class="precio">$25.000 COP</p>
+          <button onclick="agregarAlCarrito('Llave Inglesa Ajustable', 25000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+          <img src="images/pulidora.jpg" alt="Pulidora" />
+          <h3>Pulidora Eléctrica</h3>
+          <p>
+            Pulidora de alta potencia con velocidad ajustable. Perfecta para trabajos de acabado.
+          </p>
+          <p class="precio">$200.000 COP</p>
+          <button onclick="agregarAlCarrito('Pulidora Eléctrica', 200000)">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+          <img src="images/pinzas-punta.jpg" alt="Pinzas de Punta" />
+          <h3>Pinzas de Punta</h3>
+          <p>
+            Pinzas de precisión para trabajos electrónicos y de bricolaje.
+          </p>
+          <p class="precio">$20.000 COP</p>
+          <button onclick="agregarAlCarrito('Pinzas de Punta', 20000)">Agregar al Carrito</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrito lateral -->
+    <aside id="carrito-lateral">
+      <h2>Carrito</h2>
+      <div id="carrito">
+        <!-- Se mostrarán los productos agregados (solo descripción y precio) -->
+      </div>
+      <p class="total-label">Total: <span id="total">$0 COP</span></p>
+      <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+    </aside>
+
+    <!-- Botón para mostrar/ocultar el carrito -->
+    <button id="boton-carrito" onclick="toggleCarrito()">🛒 Ver Carrito</button>
+  </main>
+  <footer>
+    <p>&copy; 2023 Record Ferretería. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
