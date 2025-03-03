@@ -1,0 +1,19 @@
+{
+  "name": "record-ferreteria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+  "minify:js": "terser script.js -o script.min.js",
+  "minify:css": "postcss styles.css --use cssnano -o styles.min.css"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "postcss-cli": "^11.0.0",
+    "terser": "^5.39.0"
+  }
+}
+

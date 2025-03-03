@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Productos - Record Ferretería</title>
-  <!-- Fuente Roboto -->
+  <!-- Preconexión e importación de la fuente Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Conectar con el archivo minificado de CSS -->
+  <link rel="stylesheet" href="styles.min.css" />
 </head>
 <body>
   <header>
@@ -25,78 +26,65 @@
       <h2>Nuestros Productos</h2>
       <div class="productos">
         <div class="producto">
-          <img src="images/taladro.jpg" alt="Taladro" />
+          <img src="images/taladro.webp" alt="Taladro" loading="lazy">
           <h3>Taladro Inalámbrico</h3>
-          <p>
-            Potente taladro inalámbrico con batería de larga duración. Ideal para trabajos en el hogar y profesionales.
-          </p>
+          <p>Potente taladro inalámbrico con batería de larga duración. Ideal para trabajos en el hogar y profesionales.</p>
           <p class="precio">$150.000 COP</p>
           <button onclick="agregarAlCarrito('Taladro Inalámbrico', 150000)">Agregar al Carrito</button>
         </div>
         <div class="producto">
-          <img src="images/martillo.jpg" alt="Martillo" />
+          <img src="images/martillo.webp" alt="Martillo" loading="lazy">
           <h3>Martillo de Carpintero</h3>
-          <p>
-            Martillo robusto con mango de fibra de vidrio. Perfecto para trabajos de construcción y carpintería.
-          </p>
+          <p>Martillo robusto con mango de fibra de vidrio. Perfecto para trabajos de construcción y carpintería.</p>
           <p class="precio">$30.000 COP</p>
           <button onclick="agregarAlCarrito('Martillo de Carpintero', 30000)">Agregar al Carrito</button>
         </div>
         <div class="producto">
-          <img src="images/destornillador.jpg" alt="Destornillador" />
+          <img src="images/destornillador.webp" alt="Destornillador" loading="lazy">
           <h3>Juego de Destornilladores</h3>
-          <p>
-            Set de 6 destornilladores de precisión con puntas intercambiables. Incluye estuche para almacenamiento.
-          </p>
+          <p>Set de 6 destornilladores de precisión con puntas intercambiables. Incluye estuche para almacenamiento.</p>
           <p class="precio">$45.000 COP</p>
           <button onclick="agregarAlCarrito('Juego de Destornilladores', 45000)">Agregar al Carrito</button>
         </div>
         <div class="producto">
-          <img src="images/llave-inglesa.jpg" alt="Llave Inglesa" />
+          <img src="images/llave-inglesa.webp" alt="Llave Inglesa" loading="lazy">
           <h3>Llave Inglesa Ajustable</h3>
-          <p>
-            Llave ajustable de alta resistencia. Ideal para trabajos de fontanería y mecánica.
-          </p>
+          <p>Llave ajustable de alta resistencia. Ideal para trabajos de fontanería y mecánica.</p>
           <p class="precio">$25.000 COP</p>
           <button onclick="agregarAlCarrito('Llave Inglesa Ajustable', 25000)">Agregar al Carrito</button>
         </div>
         <div class="producto">
-          <img src="images/pulidora.jpg" alt="Pulidora" />
+          <img src="images/pulidora.webp" alt="Pulidora" loading="lazy">
           <h3>Pulidora Eléctrica</h3>
-          <p>
-            Pulidora de alta potencia con velocidad ajustable. Perfecta para trabajos de acabado.
-          </p>
+          <p>Pulidora de alta potencia con velocidad ajustable. Perfecta para trabajos de acabado.</p>
           <p class="precio">$200.000 COP</p>
           <button onclick="agregarAlCarrito('Pulidora Eléctrica', 200000)">Agregar al Carrito</button>
         </div>
         <div class="producto">
-          <img src="images/pinzas-punta.jpg" alt="Pinzas de Punta" />
+          <img src="images/pinzas-punta.webp" alt="Pinzas de Punta" loading="lazy">
           <h3>Pinzas de Punta</h3>
-          <p>
-            Pinzas de precisión para trabajos electrónicos y de bricolaje.
-          </p>
+          <p>Pinzas de precisión para trabajos electrónicos y de bricolaje.</p>
           <p class="precio">$20.000 COP</p>
           <button onclick="agregarAlCarrito('Pinzas de Punta', 20000)">Agregar al Carrito</button>
         </div>
       </div>
     </div>
-
     <!-- Carrito lateral -->
     <aside id="carrito-lateral">
       <h2>Carrito</h2>
       <div id="carrito">
-        <!-- Se mostrarán los productos agregados (solo descripción y precio) -->
+        <!-- Productos agregados se mostrarán aquí -->
       </div>
       <p class="total-label">Total: <span id="total">$0 COP</span></p>
       <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
     </aside>
-
-    <!-- Botón para mostrar/ocultar el carrito -->
+    <!-- Botón para mostrar/ocultar el carrito (parte inferior izquierda) -->
     <button id="boton-carrito" onclick="toggleCarrito()">🛒 Ver Carrito</button>
   </main>
   <footer>
-    <p>&copy; 2025 Record Ferretería. Todos los derechos reservados.</p>
+    <p>&copy; 2023 Record Ferretería. Todos los derechos reservados.</p>
   </footer>
-  <script src="script.js"></script>
+  <!-- Conectar con el archivo minificado de JavaScript -->
+  <script src="script.min.js"></script>
 </body>
 </html>
